@@ -21,6 +21,7 @@ import iconv from 'iconv';
 const { Iconv } = iconv;
 
 // 编码转换
+// GBK 是在chrome浏览器的network面板找到对应的请求，在响应头中找到的
 const encoder = new Iconv('GBK', 'UTF-8');
 
 // 关键是这里的参数，让axios先得到buffer
@@ -36,3 +37,6 @@ response = response.replace(/\r?\n|\r|\t|\s{2,}/g, '');
 ```
 
 这样最后得到的就是正常的html了。
+
+
+
