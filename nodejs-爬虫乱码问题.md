@@ -38,5 +38,7 @@ response = response.replace(/\r?\n|\r|\t|\s{2,}/g, '');
 
 这样最后得到的就是正常的html了。
 
+Tips：找到网页源码的方法
+![](asserts/sample1.png?raw=true)
 
 
